@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2a9d8f;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(173, 167, 167);
+  margin: 200px auto 0 auto;
+  position: relative;
+  border: 20px solid #929292;
+  z-index: -1;
+}
+
+.center {
+  background-color: #000;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 999px;
+}
+.hour {
+  width: 8px;
+  height: 70px;
+  background-color: #000;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 55px;
+  left: 129px;
+  z-index: 999;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(360deg);
+}
+.minute {
+  width: 5px;
+  height: 110px;
+  background-color: #000;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 21px;
+  left: 129px;
+  z-index: 9;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(90deg);
+}
+.second {
+  width: 2px;
+  height: 108px;
+  background-color: red;
+  transform-origin: bottom center;
+  border-radius: 4px;
+  position: absolute;
+  top: 25px;
+  left: 129px;
+  z-index: 1;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(360deg);
+  /* transition: all 0.06s; */
+}
+.time {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  border: 1px solid #fff8dc;
+  background-color: #fff;
+  padding: 5px;
+  display: block;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  min-width: 80px;
+  height: 20px;
+  z-index: 0;
+}
+.time span {
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  min-width: 80px;
+}
+
+.clock ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clock ul li {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 10px;
+  color: red;
+}
+.clock ul li:nth-child(1) {
+  right: 22%;
+  top: 6.5%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(2) {
+  right: 6%;
+  top: 25%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(3) {
+  right: 1%;
+  top: calc(50% - 10px);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(4) {
+  right: 6%;
+  top: 69%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(5) {
+  right: 22%;
+  top: 84%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(6) {
+  top: calc(99% - 20px);
+  right: calc(50% - 10px);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(7) {
+  left: 22%;
+  top: 84%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(8) {
+  left: 6%;
+  top: 69%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(9) {
+  left: 1%;
+  top: calc(50% - 10px);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(10) {
+  left: 22%;
+  top: 6.5%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(11) {
+  left: 6%;
+  top: 25%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.clock ul li:nth-child(12) {
+  bottom: calc(99% - 20px);
+  right: calc(50% - 10px);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
