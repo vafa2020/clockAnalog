@@ -6,8 +6,9 @@ const timeDiv = document.querySelector(".time");
 const setDate = () => {
   const todey = new Date();
 
+  // const secondDeg = (second / 60) * 360 + 360;
   const second = todey.getSeconds();
-  const secondDeg = (second / 60) * 360 + 360;
+  const secondDeg = (second / 60) * 360;
   secondDiv.style.transform = `rotate(${secondDeg}deg)`;
 
   const minute = todey.getMinutes();
